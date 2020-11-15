@@ -1,0 +1,37 @@
+.todo {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+
+    p{
+        color: #fff;
+        font-weight: bold;
+        margin-right: 5px;
+    }
+
+    .close {
+        width: 30px;
+        height: 30px;
+        position: relative;
+    }
+    .close:after {
+        content: '';
+        height: 30px;
+        border-left: 2px solid red;
+        position: absolute;
+        transform: rotate(45deg);
+        left: 28px;
+        top: 10px;
+    }
+    
+    .close:before {
+        content: '';
+        height: 30px;
+        border-left: 2px solid red;
+        position: absolute;
+        transform: rotate(-45deg);
+        left: 28px;
+        top: 10px;
+    }
+}       
